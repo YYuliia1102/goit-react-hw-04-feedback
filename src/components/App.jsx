@@ -4,6 +4,7 @@ import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Section from './Section/Section';
 import Notification from './Notification/Notification';
+import styles from '../App.module.css'
 
 const App = () => {
     const [feedback, setFeedback] = useState({
@@ -36,7 +37,7 @@ const App = () => {
     const options = Object.keys(feedback);
 
     return (
-        <div>
+        <div className={styles.container} >
             <h1>Feedback App</h1>
             <Section title="Leave Feedback">
                 <FeedbackOptions options={options} onLeaveFeedback={handleFeedback} />
