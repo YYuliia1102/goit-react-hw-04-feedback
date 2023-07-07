@@ -1,0 +1,16 @@
+/* FeedbackOptions.module.css */
+
+.button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: blue;
+  color: white;
+}
